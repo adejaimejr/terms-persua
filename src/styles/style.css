@@ -54,6 +54,8 @@ a:hover {
 /* Evita estouro horizontal em mobile, palavras longas (URLs, e-mails) quebram. */
 html,
 body {
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
 }
@@ -61,6 +63,26 @@ body {
 body {
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+
+/* Limites defensivos para conteudo e flex children, evitam estouro horizontal */
+img,
+svg,
+video,
+iframe,
+table {
+  max-width: 100%;
+}
+
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.site-header .container > *,
+.header-actions > *,
+.site-nav > * {
+  min-width: 0;
 }
 
 /* ===== Header ===== */
@@ -795,6 +817,13 @@ body {
 
   .doc hr {
     margin: 24px 0;
+  }
+
+  /* Article do doc nao deve causar scroll horizontal externo, tabelas ja tem scroll interno. */
+  .doc article,
+  .doc {
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   /* Tabela compacta, ja envolvida por .table-wrap para scroll horizontal. */
