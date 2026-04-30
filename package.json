@@ -1,0 +1,18 @@
+{
+  "name": "terms-persua",
+  "version": "1.0.0",
+  "description": "Site estatico para terms.persua.com.br. Hospeda Terms of Use, Privacy Policy e Subprocessadores.",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "node build.js",
+    "sync": "node scripts/sync-content.js",
+    "dev": "node build.js && npx --yes serve dist -l 4040"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "marked": "^12.0.2"
+  }
+}

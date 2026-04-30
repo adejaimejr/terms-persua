@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentos legais, Persua</title>
+  <meta name="description" content="Termos de Uso, Politica de Privacidade e lista de Subprocessadores da Persua.">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('persua-theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/" aria-label="Persua">
+        <img class="logo logo-light" src="/logo-persua.svg" alt="Persua" height="28">
+        <img class="logo logo-dark" src="/logo-persua-dark.svg" alt="Persua" height="28">
+      </a>
+      <div class="header-actions">
+        <nav class="site-nav">
+          <a href="/terms-of-use">Termos</a>
+          <a href="/privacy-policy">Privacidade</a>
+          <a href="/subprocessors">Subprocessadores</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema claro e escuro" title="Alternar tema">
+          <svg class="icon icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container">
+      <p class="eyebrow">Documentos legais</p>
+      <h1>Tudo que rege a relacao com a Persua, em um lugar so.</h1>
+      <p class="lead">Estes documentos sao publicos e atualizados sempre que ha mudanca relevante. Em caso de duvida, fale com a nossa Encarregada de Dados pelo e-mail <a href="mailto:contas@persua.com.br">contas@persua.com.br</a>.</p>
+    </div>
+  </main>
+
+  <section class="cards">
+    <div class="container">
+      <a class="card" href="/terms-of-use">
+        <div class="card-tag">Contrato</div>
+        <h2>Termos de Uso</h2>
+        <p>Regras de uso da plataforma Persua, planos, pagamentos, responsabilidades e cancelamento.</p>
+        <span class="card-cta">Ler documento &rarr;</span>
+      </a>
+
+      <a class="card" href="/privacy-policy">
+        <div class="card-tag">LGPD</div>
+        <h2>Politica de Privacidade</h2>
+        <p>Como a Persua coleta, usa e protege dados pessoais. Direitos do titular e prazos de retencao.</p>
+        <span class="card-cta">Ler documento &rarr;</span>
+      </a>
+
+      <a class="card" href="/subprocessors">
+        <div class="card-tag">Infraestrutura</div>
+        <h2>Subprocessadores</h2>
+        <p>Lista das empresas que processam dados em nome da Persua, com finalidade e localizacao.</p>
+        <span class="card-cta">Ver lista &rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>SB MARKETING LTDA, CNPJ 62.939.943/0001-31. R. Rodrigues Alves, 207, Conjunto Dom Pedro I, Manaus AM.</p>
+      <p>Encarregada de Dados (DPO): Samara Gomes Benevides dos Santos, <a href="mailto:contas@persua.com.br">contas@persua.com.br</a>.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        var current = document.documentElement.getAttribute('data-theme') || 'light';
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('persua-theme', next); } catch (e) {}
+      });
+    })();
+  </script>
+</body>
+</html>
