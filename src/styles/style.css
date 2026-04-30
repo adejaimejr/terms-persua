@@ -26,7 +26,7 @@ body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: var(--gray-800);
   background: var(--gray-50);
   line-height: 1.6;
@@ -255,10 +255,23 @@ body {
   font-size: 14px;
   font-weight: 600;
   color: var(--navy);
+  display: inline-flex;
+  align-items: center;
+}
+
+.card-cta::after {
+  content: "→";
+  display: inline-block;
+  margin-left: 6px;
+  transition: transform 200ms ease;
 }
 
 .card:hover .card-cta {
   color: var(--green);
+}
+
+.card:hover .card-cta::after {
+  transform: translateX(4px);
 }
 
 /* ===== Doc page ===== */
@@ -462,7 +475,7 @@ body {
 }
 
 [data-theme="dark"] .site-header {
-  background: #0a1530;
+  background: #0f1f3d;
   border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 
@@ -819,5 +832,17 @@ body {
 
   .card {
     padding: 20px 18px;
+  }
+}
+
+/* ===== Acessibilidade, respeita preferencia de menos animacao ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
