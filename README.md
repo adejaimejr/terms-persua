@@ -70,7 +70,32 @@ npm install            # instalar marked
 npm run sync           # copiar MDs canonicos
 npm run build          # gerar dist/
 npm run dev            # build + servir local em :4040
+npm run gen-og         # regerar src/public/og-image.png (1200x630)
 ```
+
+## Open Graph (preview no WhatsApp, Facebook, LinkedIn)
+
+A imagem `src/public/og-image.png` (1200x630) aparece quando o link e compartilhado em redes sociais e WhatsApp. As meta tags estao em `src/templates/home.html` e `src/templates/doc.html`.
+
+Para atualizar:
+
+```bash
+# 1. Edita o HTML/CSS inline dentro de scripts/generate-og.js
+# 2. Regera:
+npm run gen-og
+# 3. Confere o PNG visualmente
+# 4. Commit + push
+git add src/public/og-image.png
+git commit -m "update: og image"
+git push
+```
+
+Apos atualizar, se o link ja foi compartilhado, force refresh do cache no Facebook Debugger:
+`https://developers.facebook.com/tools/debug/?q=https://terms.persua.com.br/`
+
+Padrao reusavel para outros projetos Persua: ver memory `feedback_og_preview_pattern.md`.
+
+O script `generate-og.js` reusa o Puppeteer instalado no projeto pai (`Persua_squads/node_modules/puppeteer`) para nao adicionar 100MB+ de Chromium no Docker build deste subprojeto.
 
 ## Deploy local com Docker
 
