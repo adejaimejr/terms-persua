@@ -7,6 +7,7 @@
   "scripts": {
     "build": "node build.js",
     "sync": "node scripts/sync-content.js",
+    "gen-og": "node scripts/generate-og.js",
     "dev": "node build.js && npx --yes serve dist -l 4040"
   },
   "engines": {

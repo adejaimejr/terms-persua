@@ -10,6 +10,7 @@ const { marked } = require('marked');
 const ROOT = __dirname;
 const SRC = path.join(ROOT, 'src');
 const DIST = path.join(ROOT, 'dist');
+const SITE_URL = 'https://terms.persua.com.br';
 
 const PAGES = [
   {
@@ -91,6 +92,7 @@ function build() {
       TITLE: page.title,
       DESCRIPTION: page.description,
       CONTENT: html,
+      URL: `${SITE_URL}/${page.slug}`,
     });
     fs.writeFileSync(path.join(DIST, `${page.slug}.html`), out);
     console.log(`[build] dist/${page.slug}.html`);
