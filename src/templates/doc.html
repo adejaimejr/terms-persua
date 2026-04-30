@@ -10,10 +10,11 @@
     (function () {
       try {
         var saved = localStorage.getItem('persua-theme');
-        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        var theme = saved || (prefersDark ? 'dark' : 'light');
+        var theme = saved === 'dark' || saved === 'light' ? saved : 'light';
         document.documentElement.setAttribute('data-theme', theme);
-      } catch (e) {}
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
     })();
   </script>
   <link rel="stylesheet" href="/style.css">

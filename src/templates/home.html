@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Documentos legais, Persua</title>
-  <meta name="description" content="Termos de Uso, Politica de Privacidade e lista de Subprocessadores da Persua.">
+  <meta name="description" content="Termos de Uso, Política de Privacidade e lista de Subprocessadores da Persua.">
   <link rel="icon" href="/favicon.png" type="image/png">
   <script>
     (function () {
       try {
         var saved = localStorage.getItem('persua-theme');
-        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        var theme = saved || (prefersDark ? 'dark' : 'light');
+        var theme = saved === 'dark' || saved === 'light' ? saved : 'light';
         document.documentElement.setAttribute('data-theme', theme);
-      } catch (e) {}
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
     })();
   </script>
   <link rel="stylesheet" href="/style.css">
@@ -47,8 +48,8 @@
   <main class="hero">
     <div class="container">
       <p class="eyebrow">Documentos legais</p>
-      <h1>Tudo que rege a relacao com a Persua, em um lugar so.</h1>
-      <p class="lead">Estes documentos sao publicos e atualizados sempre que ha mudanca relevante. Em caso de duvida, fale com a nossa Encarregada de Dados pelo e-mail <a href="mailto:contas@persua.com.br">contas@persua.com.br</a>.</p>
+      <h1>Tudo que rege a relação com a Persua, em um lugar só.</h1>
+      <p class="lead">Estes documentos são públicos e atualizados sempre que há mudança relevante. Em caso de dúvida, fale com a nossa Encarregada de Dados pelo e-mail <a href="mailto:contas@persua.com.br">contas@persua.com.br</a>.</p>
     </div>
   </main>
 
@@ -63,15 +64,15 @@
 
       <a class="card" href="/privacy-policy">
         <div class="card-tag">LGPD</div>
-        <h2>Politica de Privacidade</h2>
-        <p>Como a Persua coleta, usa e protege dados pessoais. Direitos do titular e prazos de retencao.</p>
+        <h2>Política de Privacidade</h2>
+        <p>Como a Persua coleta, usa e protege dados pessoais. Direitos do titular e prazos de retenção.</p>
         <span class="card-cta">Ler documento &rarr;</span>
       </a>
 
       <a class="card" href="/subprocessors">
         <div class="card-tag">Infraestrutura</div>
         <h2>Subprocessadores</h2>
-        <p>Lista das empresas que processam dados em nome da Persua, com finalidade e localizacao.</p>
+        <p>Lista das empresas que processam dados em nome da Persua, com finalidade e localização.</p>
         <span class="card-cta">Ver lista &rarr;</span>
       </a>
     </div>

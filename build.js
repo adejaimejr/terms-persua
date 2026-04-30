@@ -21,14 +21,14 @@ const PAGES = [
   {
     slug: 'privacy-policy',
     file: 'privacy-policy.md',
-    title: 'Politica de Privacidade',
-    description: 'Politica de Privacidade da Persua. Como coletamos, usamos e protegemos dados pessoais.',
+    title: 'Política de Privacidade',
+    description: 'Política de Privacidade da Persua. Como coletamos, usamos e protegemos dados pessoais.',
   },
   {
     slug: 'subprocessors',
     file: 'subprocessors.md',
     title: 'Subprocessadores',
-    description: 'Lista publica de subprocessadores da Persua, com finalidade e localizacao.',
+    description: 'Lista pública de subprocessadores da Persua, com finalidade e localização.',
   },
 ];
 
