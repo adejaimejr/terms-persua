@@ -55,14 +55,24 @@ a:hover {
 html,
 body {
   width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
+  max-width: 100vw;
+  overflow-x: clip;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   word-wrap: break-word;
   overflow-wrap: break-word;
+  position: relative;
+}
+
+/* Confina sections para nunca estourar a viewport (defesa contra qualquer filho largo) */
+main,
+section,
+header,
+footer,
+.container {
+  max-width: 100vw;
 }
 
 /* Limites defensivos para conteudo e flex children, evitam estouro horizontal */
@@ -95,9 +105,25 @@ pre {
 }
 
 .site-header .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 24px;
+}
+
+.brand {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.site-header .site-nav {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.site-header .theme-toggle {
+  grid-column: 3;
+  grid-row: 1;
 }
 
 .brand {
@@ -166,7 +192,9 @@ pre {
   display: flex;
   gap: 24px;
   font-size: 14px;
-  margin-left: auto;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  min-width: 0;
 }
 
 .site-nav a {
@@ -662,13 +690,14 @@ pre {
     padding: 0 16px;
   }
 
-  /* Header: linha 1 brand + toggle (toggle empurrado pra direita). Linha 2 nav full width. */
+  /* Header: linha 1 brand + toggle, linha 2 nav full-width. Grid 2x2. */
   .site-header {
     padding: 12px 0;
   }
 
   .site-header .container {
-    flex-wrap: wrap;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
     column-gap: 12px;
     row-gap: 12px;
   }
@@ -677,24 +706,30 @@ pre {
     height: 24px;
   }
 
-  .theme-toggle {
-    margin-left: auto;
+  .site-header .theme-toggle {
     width: 44px;
     height: 44px;
   }
 
-  .site-nav {
-    order: 3;
-    width: 100%;
-    margin-left: 0;
-    gap: 18px;
+  .site-header .site-nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 8px;
     font-size: 13px;
     padding-top: 8px;
     border-top: 1px solid var(--gray-200);
-    justify-content: space-between;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
   }
 
-  [data-theme="dark"] .site-nav {
+  .site-header .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  [data-theme="dark"] .site-header .site-nav {
     border-top-color: rgba(255, 255, 255, 0.08);
   }
 
