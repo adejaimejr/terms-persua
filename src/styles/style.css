@@ -80,7 +80,6 @@ pre {
 }
 
 .site-header .container > *,
-.header-actions > *,
 .site-nav > * {
   min-width: 0;
 }
@@ -98,7 +97,6 @@ pre {
 .site-header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 24px;
 }
 
@@ -126,12 +124,6 @@ pre {
   display: block;
 }
 
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
 .theme-toggle {
   background: transparent;
   border: 1px solid var(--gray-200);
@@ -145,6 +137,7 @@ pre {
   color: var(--gray-600);
   transition: color 120ms ease, border-color 120ms ease, background 120ms ease;
   padding: 0;
+  flex-shrink: 0;
 }
 
 .theme-toggle:hover {
@@ -173,6 +166,7 @@ pre {
   display: flex;
   gap: 24px;
   font-size: 14px;
+  margin-left: auto;
 }
 
 .site-nav a {
@@ -668,29 +662,31 @@ pre {
     padding: 0 16px;
   }
 
-  /* Header: empilha brand acima de actions, nav vira linha propria, full width. */
+  /* Header: linha 1 brand + toggle (toggle empurrado pra direita). Linha 2 nav full width. */
   .site-header {
     padding: 12px 0;
   }
 
   .site-header .container {
     flex-wrap: wrap;
-    gap: 12px;
-    justify-content: space-between;
+    column-gap: 12px;
+    row-gap: 12px;
   }
 
   .brand img {
     height: 24px;
   }
 
-  .header-actions {
-    gap: 8px;
-    order: 2;
+  .theme-toggle {
+    margin-left: auto;
+    width: 44px;
+    height: 44px;
   }
 
   .site-nav {
     order: 3;
     width: 100%;
+    margin-left: 0;
     gap: 18px;
     font-size: 13px;
     padding-top: 8px;
@@ -700,12 +696,6 @@ pre {
 
   [data-theme="dark"] .site-nav {
     border-top-color: rgba(255, 255, 255, 0.08);
-  }
-
-  /* Tap target Apple HIG, 44x44. */
-  .theme-toggle {
-    width: 44px;
-    height: 44px;
   }
 
   /* Hero: padding mais enxuto, lead com tamanho confortavel. */
