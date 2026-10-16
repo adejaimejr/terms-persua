@@ -1,15 +1,15 @@
 # Termos de Uso, Persua
 
-**Versão:** v1.0
-**Data:** 2026-04-30
-**Empresa:** SB MARKETING LTDA, CNPJ 62.939.943/0001-31
+**Versão:** v1.1
+**Data:** 2026-10-16
+**Empresa:** PERSUA LTDA, CNPJ 69.036.264/0001-00
 **Sede:** R. Rodrigues Alves, 207, Conjunto Dom Pedro I, Manaus AM, CEP 69.040-180
 
 ---
 
 ## 1. Quem somos
 
-A SB MARKETING LTDA, neste documento referida como **Persua** ou **Contratada**, é uma empresa brasileira que oferece, via plataforma própria, serviços de CRM conversacional, atendimento omnicanal, automação e pagamentos integrados para WhatsApp, Instagram e Messenger. Estes Termos de Uso regulam o acesso e o uso da plataforma Persua disponível em persua.chat e em aplicações mobile relacionadas, por qualquer pessoa física ou jurídica que se cadastre como Cliente ou Usuário.
+A PERSUA LTDA, neste documento referida como **Persua** ou **Contratada**, é uma empresa brasileira que oferece, via plataforma própria, serviços de CRM conversacional, atendimento omnicanal, automação e pagamentos integrados para WhatsApp, Instagram e Messenger. Estes Termos de Uso regulam o acesso e o uso da plataforma Persua disponível em persua.chat e em aplicações mobile relacionadas, por qualquer pessoa física ou jurídica que se cadastre como Cliente ou Usuário.
 
 ## 2. Definições
 
@@ -202,4 +202,5 @@ Fica eleito o foro da Comarca de Manaus, Estado do Amazonas, com renúncia expre
 
 ## Histórico
 
+- v1.1 (2026-10-16): atualização dos dados da empresa. A Contratada passa a ser a PERSUA LTDA, CNPJ 69.036.264/0001-00 (antes SB MARKETING LTDA, CNPJ 62.939.943/0001-31). Sede e demais cláusulas sem alteração.
 - v1.0 (2026-04-30): versão publicada em terms.persua.com.br. As próximas mudanças serão registradas neste histórico.

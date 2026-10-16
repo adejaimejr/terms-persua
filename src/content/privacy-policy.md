@@ -1,8 +1,8 @@
 # Política de Privacidade, Persua
 
-**Versão:** v1.0
-**Data:** 2026-04-30
-**Empresa:** SB MARKETING LTDA, CNPJ 62.939.943/0001-31
+**Versão:** v1.1
+**Data:** 2026-10-16
+**Empresa:** PERSUA LTDA, CNPJ 69.036.264/0001-00
 **Sede:** R. Rodrigues Alves, 207, Conjunto Dom Pedro I, Manaus AM, CEP 69.040-180
 **Encarregada (DPO):** Samara Gomes Benevides dos Santos, contas@persua.com.br
 
@@ -32,7 +32,7 @@
 
 ## 1. Quem somos e a quem se aplica
 
-A SB MARKETING LTDA, neste documento referida como **Persua**, é uma empresa brasileira que oferece plataforma de CRM conversacional, atendimento omnicanal e automação para WhatsApp, Instagram e Messenger. Esta Política descreve como tratamos dados pessoais de:
+A PERSUA LTDA, neste documento referida como **Persua**, é uma empresa brasileira que oferece plataforma de CRM conversacional, atendimento omnicanal e automação para WhatsApp, Instagram e Messenger. Esta Política descreve como tratamos dados pessoais de:
 
 - **Clientes** que contratam nossos serviços (pessoas físicas e representantes de pessoas jurídicas).
 - **Usuários** indicados pelos Clientes para operar a plataforma.
@@ -201,4 +201,5 @@ A Persua mantém canal de denúncias para condutas que violem nossa política in
 
 ## Histórico
 
+- v1.1 (2026-10-16): atualização dos dados da empresa. A controladora passa a ser a PERSUA LTDA, CNPJ 69.036.264/0001-00 (antes SB MARKETING LTDA, CNPJ 62.939.943/0001-31). Sede, Encarregada e demais seções sem alteração.
 - v1.0 (2026-04-30): versão publicada em terms.persua.com.br. As próximas mudanças serão registradas neste histórico.
