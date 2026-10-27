@@ -1,7 +1,7 @@
 # Termos de Uso, Persua
 
-**Versão:** v1.1
-**Data:** 2026-10-16
+**Versão:** v1.2
+**Data:** 2026-10-27
 **Empresa:** PERSUA LTDA, CNPJ 69.036.264/0001-00
 **Sede:** R. Rodrigues Alves, 207, Conjunto Dom Pedro I, Manaus AM, CEP 69.040-180
 
@@ -170,7 +170,7 @@ A PERSUA LTDA, neste documento referida como **Persua** ou **Contratada**, é um
 
 13.2. A lista atualizada de subprocessadores que apoiam a operação é mantida em terms.persua.com.br/subprocessors.
 
-13.3. A Encarregada pelo Tratamento de Dados Pessoais é Samara Gomes Benevides dos Santos, contato pelo e-mail contas@persua.com.br.
+13.3. O Encarregado pelo Tratamento de Dados Pessoais é Adejaime Vieira da Cruz Junior, contato pelo e-mail contas@persua.com.br.
 
 ## 14. Cessão e divulgação comercial
 
@@ -202,5 +202,6 @@ Fica eleito o foro da Comarca de Manaus, Estado do Amazonas, com renúncia expre
 
 ## Histórico
 
+- v1.2 (2026-10-27): troca do Encarregado de Dados (DPO), que passa a ser Adejaime Vieira da Cruz Junior (antes Samara Gomes Benevides dos Santos). Demais cláusulas sem alteração.
 - v1.1 (2026-10-16): atualização dos dados da empresa. A Contratada passa a ser a PERSUA LTDA, CNPJ 69.036.264/0001-00 (antes SB MARKETING LTDA, CNPJ 62.939.943/0001-31). Sede e demais cláusulas sem alteração.
 - v1.0 (2026-04-30): versão publicada em terms.persua.com.br. As próximas mudanças serão registradas neste histórico.

@@ -1,10 +1,10 @@
 # Política de Privacidade, Persua
 
-**Versão:** v1.1
-**Data:** 2026-10-16
+**Versão:** v1.2
+**Data:** 2026-10-27
 **Empresa:** PERSUA LTDA, CNPJ 69.036.264/0001-00
 **Sede:** R. Rodrigues Alves, 207, Conjunto Dom Pedro I, Manaus AM, CEP 69.040-180
-**Encarregada (DPO):** Samara Gomes Benevides dos Santos, contas@persua.com.br
+**Encarregado (DPO):** Adejaime Vieira da Cruz Junior, contas@persua.com.br
 
 ---
 
@@ -71,7 +71,7 @@ A distinção é importante e define quem responde pelo que:
 - Origem do contato: canal (WhatsApp, Instagram, Messenger), campanha, indicação.
 
 ### 4.3. Dados de visitantes e candidatos
-- Site: cookies, ferramentas de análise.
+- Site: cookies e tecnologias similares; parâmetros de campanha (UTMs e identificador de clique de anúncio); páginas visitadas e cliques em botões; endereço IP encurtado (os últimos dígitos são descartados); e, quando o visitante preenche o formulário de contato, nome, e-mail e telefone, que são enviados apenas ao Persua CRM.
 - Candidatos: dados do currículo enviado, histórico do processo seletivo.
 
 ## 5. Para que usamos os dados (finalidades)
@@ -83,6 +83,7 @@ A distinção é importante e define quem responde pelo que:
 - Melhorar o produto: análise agregada e anonimizada de uso.
 - Atender direitos dos titulares e demandas da ANPD.
 - Selecionar candidatos e formalizar parcerias.
+- Medir a origem dos contatos e o resultado de campanhas de anúncios, e otimizar essas campanhas.
 
 ## 6. Bases legais (LGPD)
 
@@ -90,10 +91,10 @@ Cada finalidade tem uma base legal específica:
 
 - **Execução de contrato** (art. 7º, V): cadastro, cobrança, operação da plataforma para o Cliente.
 - **Cumprimento de obrigação legal** (art. 7º, II): dados fiscais, registros contábeis, atendimento à ANPD.
-- **Legítimo interesse** (art. 7º, IX): operação de IA, segurança, melhoria do produto, com salvaguardas e teste de proporcionalidade.
+- **Legítimo interesse** (art. 7º, IX): operação de IA, segurança, melhoria do produto, medição de campanhas e cookies de medição e publicidade do site, com salvaguardas e teste de proporcionalidade.
 - **Garantia de prevenção à fraude e segurança do titular** (art. 11, II, "g"): identificação e autenticação de cadastros, monitoramento de padrões anômalos.
 - **Proteção do crédito** (art. 7º, X): análise de capacidade financeira para contratação dos planos.
-- **Consentimento** (art. 7º, I): comunicação de marketing direta a candidatos ou parceiros, quando aplicável; cookies não essenciais.
+- **Consentimento** (art. 7º, I): comunicação de marketing direta a candidatos ou parceiros, quando aplicável.
 - **Exercício regular de direitos** (art. 7º, VI): defesa em processos judiciais, administrativos ou arbitrais.
 
 Os tratamentos baseados em consentimento podem ser revogados a qualquer momento pelo titular, sem prejuízo dos tratamentos lícitos anteriores.
@@ -115,18 +116,21 @@ Detalhes operacionais estão na Política de Retenção interna mantida pela DPO
 
 A Persua compartilha dados pessoais apenas com prestadores essenciais à operação. A lista atualizada está em **terms.persua.com.br/subprocessors**.
 
-Subprocessadores em vigor em 2026-04-28:
+Subprocessadores em vigor em 2026-10-27:
 
 - **Asaas** (Brasil): cobrança e NFS-e
 - **Assinafy** (Brasil): assinatura digital
 - **Meta Platforms** (EUA): APIs de WhatsApp, Instagram, Messenger
-- **OpenAI** (EUA): modelos GPT em agentes de IA
+- **OpenAI** (EUA): modelos GPT em agentes de IA e medição de anúncios no site (pixel da OpenAI Ads)
 - **Anthropic** (EUA): modelos Claude em agentes de IA
-- **Hetzner Online** (Alemanha): hospedagem
+- **Hetzner Online** (Alemanha): hospedagem, inclusive da API de medição do site
 - **Contabo** (Alemanha): hospedagem
 - **Amazon Web Services** (EUA e Brasil): hospedagem
 - **Hunion.io** (Brasil): hospedagem
 - **SendGrid** (EUA): envio de e-mail transacional
+- **Supabase** (EUA): banco de dados dos leads e dos eventos de medição do site
+- **Cloudflare** (EUA, rede global): DNS, proteção contra ataques e proxy da API de medição do site
+- **HostGator** (Brasil): hospedagem do site institucional persua.com.br
 
 A Persua só transfere dados a subprocessadores que ofereçam padrões adequados de segurança e privacidade, formalizados em contrato.
 
@@ -153,13 +157,14 @@ Conforme art. 18 da LGPD, o titular pode solicitar:
 
 ## 11. Cookies e tecnologias similares
 
-O site da Persua usa cookies de três categorias:
+O site da Persua usa cookies e tecnologias similares em quatro categorias:
 
-- **Estritamente necessários:** essenciais ao funcionamento do site, à segurança e à performance. Sem eles, partes do site não funcionam.
-- **Preferenciais:** armazenam configurações do usuário, como idioma e região, melhorando a navegação.
-- **Analíticos:** coletam dados agregados sobre o uso do site (páginas acessadas, tempo de permanência) para apoiar melhorias.
+- **Estritamente necessários:** essenciais ao funcionamento, à segurança e ao registro das suas escolhas de cookies. Sempre ativos.
+- **Preferenciais:** guardam configurações, como idioma e região.
+- **Medição própria:** registram de qual campanha o visitante veio, com um código aleatório (cookie prs_sid, 180 dias), sem nome, e-mail ou telefone, e com o IP encurtado.
+- **Publicidade:** pixel da OpenAI Ads (cookies __oppref, 30 dias, e __obref, 1 ano), usado para medir o resultado de anúncios.
 
-Cookies não essenciais dependem de consentimento, gerenciado pelo banner de cookies. Você pode revisar suas preferências a qualquer momento pelo banner ou pelas configurações do navegador. Removida a aceitação, alguns recursos podem não funcionar plenamente.
+Os cookies de medição própria e de publicidade são usados com base no legítimo interesse da Persua (art. 7º, IX, e art. 10 da LGPD) e podem ser desligados a qualquer momento pelo painel de cookies do site (link "Cookies" no rodapé) ou pelas configurações do navegador. A lista completa, com finalidade e prazo de cada cookie, está em https://persua.com.br/cookies.
 
 ## 12. Segurança da informação
 
@@ -195,11 +200,12 @@ A Persua mantém canal de denúncias para condutas que violem nossa política in
 
 ## 17. Como falar conosco
 
-- **Encarregada (DPO):** Samara Gomes Benevides dos Santos
+- **Encarregado (DPO):** Adejaime Vieira da Cruz Junior
 - **Canal único:** contas@persua.com.br
 - **Endereço postal:** R. Rodrigues Alves, 207, Conjunto Dom Pedro I, Manaus AM, CEP 69.040-180
 
 ## Histórico
 
+- v1.2 (2026-10-27): site persua.com.br passa a ter medição própria de campanhas, pixel da OpenAI Ads e barra de cookies. Atualizados o item 4.3, as finalidades, a seção de Cookies (agora com quatro categorias e base de legítimo interesse), as bases legais e a lista de subprocessadores. Troca do Encarregado de Dados (DPO), que passa a ser Adejaime Vieira da Cruz Junior (antes Samara Gomes Benevides dos Santos).
 - v1.1 (2026-10-16): atualização dos dados da empresa. A controladora passa a ser a PERSUA LTDA, CNPJ 69.036.264/0001-00 (antes SB MARKETING LTDA, CNPJ 62.939.943/0001-31). Sede, Encarregada e demais seções sem alteração.
 - v1.0 (2026-04-30): versão publicada em terms.persua.com.br. As próximas mudanças serão registradas neste histórico.

@@ -16,11 +16,11 @@ const CANONICO_BASE = path.resolve(__dirname, '..', '..', '..', 'persua', 'jurid
 
 const MAPPINGS = [
   {
-    src: path.join(CANONICO_BASE, 'termos_publicos', 'terms-of-use_v1.1.md'),
+    src: path.join(CANONICO_BASE, 'termos_publicos', 'terms-of-use_v1.2.md'),
     dst: path.resolve(__dirname, '..', 'src', 'content', 'terms-of-use.md'),
   },
   {
-    src: path.join(CANONICO_BASE, 'termos_publicos', 'privacy-policy_v1.1.md'),
+    src: path.join(CANONICO_BASE, 'termos_publicos', 'privacy-policy_v1.2.md'),
     dst: path.resolve(__dirname, '..', 'src', 'content', 'privacy-policy.md'),
   },
   {

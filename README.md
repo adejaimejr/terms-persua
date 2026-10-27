@@ -36,8 +36,8 @@ Site estatico para `terms.persua.com.br`. Hospeda os documentos legais publicos 
 
 Os 3 MDs em `src/content/` sao **copias** dos canonicos do escritorio virtual:
 
-- `terms-of-use.md` <- `persua/juridico/compliance/termos_publicos/terms-of-use_v1.1.md`
-- `privacy-policy.md` <- `persua/juridico/compliance/termos_publicos/privacy-policy_v1.1.md`
+- `terms-of-use.md` <- `persua/juridico/compliance/termos_publicos/terms-of-use_v1.2.md`
+- `privacy-policy.md` <- `persua/juridico/compliance/termos_publicos/privacy-policy_v1.2.md`
 - `subprocessors.md` <- `persua/juridico/compliance/subprocessadores.md`
 
 O canonico continua sendo a fonte unica. Este repo sincroniza via `npm run sync` e commita.
